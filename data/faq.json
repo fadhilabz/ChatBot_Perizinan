@@ -1,0 +1,223 @@
+[
+  {
+    "id": "1",
+    "question": "Apa saja syarat mengurus NIB?",
+    "answer": "Syarat mengurus NIB: KTP pemilik usaha, NPWP, dan data kegiatan usaha.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "2",
+    "question": "Bagaimana ketentuan PBG?",
+    "answer": "PBG (Persetujuan Bangunan Gedung) wajib dimiliki sebelum mendirikan bangunan. Hubungi kantor untuk daftar dokumen yang diperlukan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "3",
+    "question": "Kapan jam layanan kantor perizinan?",
+    "answer": "Layanan buka Senin sampai Jumat, pukul 08.00 sampai 16.00 WITA.",
+    "category": "Informasi Umum"
+  },
+    {
+    "id": "4",
+    "question": "Di mana alamat kantor layanan perizinan?",
+    "answer": "Kantor Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP) Kota Baubau beralamat di Jl. Raya Palagimata, Kelurahan Lipu, Kecamatan Betoambari, Kota Baubau, Sulawesi Tenggara 93721.",
+    "category": "Informasi Umum"
+  },  {
+    "id": "5",
+    "question": "Apa itu NIB?",
+    "answer": "NIB (Nomor Induk Berusaha) adalah identitas pelaku usaha yang diterbitkan lewat sistem OSS. NIB juga menggantikan TDP, API, dan akses kepabeanan, jadi tidak perlu diurus terpisah.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "6",
+    "question": "Apakah mengurus NIB berbayar?",
+    "answer": "Pendaftaran NIB lewat OSS tidak dipungut biaya. Waspadai pihak yang meminta bayaran untuk menerbitkan NIB.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "7",
+    "question": "Siapa yang wajib memiliki NIB?",
+    "answer": "Setiap pelaku usaha, baik perorangan maupun badan usaha, termasuk usaha mikro dan kecil, perlu memiliki NIB sebagai syarat menjalankan usaha secara resmi.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "8",
+    "question": "Bagaimana cara membuat akun OSS?",
+    "answer": "Buka oss.go.id, pilih Daftar, lalu isi data diri dan email. Setelah akun aktif, Anda bisa login dan mengisi data usaha untuk mengajukan NIB.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "9",
+    "question": "Apakah bisa mengurus NIB tanpa NPWP?",
+    "answer": "NPWP termasuk data yang perlu disiapkan. Jika belum punya, daftarkan NPWP lebih dulu secara online lewat Coretax DJP, lalu lanjutkan pengurusan NIB.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "10",
+    "question": "Apa itu kode KBLI dan bagaimana memilihnya?",
+    "answer": "KBLI adalah kode klasifikasi jenis kegiatan usaha. Pilih kode yang sesuai dengan kegiatan usaha yang benar-benar dijalankan, karena kode yang salah bisa membuat NIB tidak sesuai atau ditolak.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "11",
+    "question": "Apa beda syarat NIB perorangan dan badan usaha?",
+    "answer": "NIB perorangan umumnya cukup dengan KTP (NIK), NPWP, dan data usaha. NIB badan usaha memerlukan dokumen pendirian badan usaha beserta pengesahannya, NPWP badan, dan data penanggung jawab.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "12",
+    "question": "Berapa lama NIB terbit?",
+    "answer": "Lama proses bergantung pada kelengkapan data dan tingkat risiko kegiatan usaha. Pastikan semua data terisi benar agar tidak tertahan di validasi sistem.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "13",
+    "question": "Bagaimana mencetak ulang NIB yang hilang?",
+    "answer": "Login ke akun OSS Anda, lalu unduh kembali dokumen NIB dari akun tersebut. Jika lupa kata sandi atau akses akun, gunakan fitur pemulihan akun di OSS atau tanyakan ke kantor perizinan.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "14",
+    "question": "Bagaimana mengubah data pada NIB?",
+    "answer": "Login ke akun OSS dan ajukan perubahan data usaha di sana, misalnya alamat, kegiatan usaha, atau data penanggung jawab. NIB akan diperbarui setelah perubahan diproses sistem.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "15",
+    "question": "Apakah NIB saja sudah cukup untuk menjalankan usaha?",
+    "answer": "Untuk usaha mikro dan kecil berisiko rendah, NIB umumnya sudah menjadi legalitas dasar. Usaha dengan tingkat risiko lebih tinggi bisa memerlukan izin lanjutan. Sistem OSS akan menunjukkannya setelah data kegiatan usaha diisi.",
+    "category": "Perizinan Usaha (NIB)"
+  },
+  {
+    "id": "16",
+    "question": "Apa itu PBG?",
+    "answer": "PBG (Persetujuan Bangunan Gedung) adalah persetujuan pemerintah daerah untuk membangun, mengubah, atau merenovasi bangunan gedung sesuai standar teknis. PBG menggantikan IMB.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "17",
+    "question": "Apa bedanya PBG dengan IMB?",
+    "answer": "PBG adalah pengganti IMB. Pengajuannya dilakukan online lewat SIMBG, dan satu bangunan boleh memiliki fungsi campuran, sedangkan IMB lama hanya untuk satu fungsi bangunan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "18",
+    "question": "Kapan saya perlu mengurus PBG?",
+    "answer": "PBG diperlukan untuk mendirikan bangunan baru dan untuk mengubah atau merenovasi bangunan yang sudah ada. Untuk memastikan apakah rencana bangunan Anda memerlukannya, tanyakan ke kantor perizinan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "19",
+    "question": "Dokumen apa yang disiapkan untuk PBG?",
+    "answer": "Umumnya: identitas pemohon, bukti kepemilikan tanah, gambar teknis bangunan (denah, tampak, potongan), dan rencana tapak. Daftar lengkapnya bisa berbeda menurut jenis bangunan, jadi konfirmasikan ke kantor.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "20",
+    "question": "Apakah PBG ada biayanya?",
+    "answer": "Ada retribusi daerah yang dibayar sebelum PBG diterbitkan. Besarnya mengikuti ketentuan daerah dan jenis bangunan. Tanyakan perhitungannya ke kantor perizinan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "21",
+    "question": "Bagaimana cara mengajukan PBG?",
+    "answer": "Daftar akun di simbg.pu.go.id, isi formulir permohonan, dan unggah dokumen administrasi dan teknis. Pantau akun SIMBG untuk pemberitahuan kelengkapan berkas, bayar retribusi jika sudah ditetapkan, lalu unduh PBG setelah terbit.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "22",
+    "question": "Apa itu SLF?",
+    "answer": "SLF (Sertifikat Laik Fungsi) menyatakan bangunan sudah laik digunakan. SLF diajukan lewat SIMBG setelah konstruksi selesai, dan didahului pemeriksaan lapangan oleh tim teknis.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "23",
+    "question": "Bangunan sudah berdiri, apakah masih bisa mengurus PBG?",
+    "answer": "Bisa diajukan, tetapi bangunan perlu sesuai dengan tata ruang dan standar teknis, dan bisa ada konsekuensi administratif. Konsultasikan kondisi bangunan Anda langsung ke kantor perizinan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "24",
+    "question": "Apakah bisa mengajukan PBG kalau belum punya sertifikat tanah?",
+    "answer": "Dokumen bukti hak atau penguasaan tanah umumnya diminta saat pengajuan. Untuk kondisi tertentu, misalnya tanah belum bersertifikat, tanyakan dokumen pengganti yang diterima ke kantor perizinan.",
+    "category": "PBG / Bangunan"
+  },
+  {
+    "id": "25",
+    "question": "Bagaimana saya tahu izin apa yang saya butuhkan?",
+    "answer": "Jenis izin bergantung pada kegiatan usaha dan tingkat risikonya. Setelah mengisi data kegiatan usaha (KBLI) di OSS, sistem akan menampilkan izin yang diperlukan. Anda juga bisa bertanya langsung ke kantor perizinan.",
+    "category": "Izin Lainnya"
+  },
+  {
+    "id": "26",
+    "question": "Apakah usaha kecil perlu izin tambahan selain NIB?",
+    "answer": "Banyak usaha mikro dan kecil berisiko rendah cukup dengan NIB. Namun beberapa kegiatan, misalnya yang menyangkut bangunan, makanan, atau lingkungan, bisa memerlukan izin lanjutan. Cek di OSS atau tanyakan ke kantor.",
+    "category": "Izin Lainnya"
+  },
+  {
+    "id": "27",
+    "question": "Apa itu kesesuaian tata ruang dan kenapa penting?",
+    "answer": "Lokasi usaha harus sesuai dengan rencana tata ruang daerah. Sistem OSS memeriksa hal ini, dan lokasi yang tidak sesuai bisa menghambat penerbitan NIB atau izin lanjutan.",
+    "category": "Izin Lainnya"
+  },
+  {
+    "id": "28",
+    "question": "Permohonan izin saya tertunda atau ditolak, apa yang harus dilakukan?",
+    "answer": "Periksa notifikasi dan catatan di akun OSS atau SIMBG. Penyebab umum adalah data tidak lengkap, kode KBLI tidak sesuai, atau lokasi tidak sesuai tata ruang. Perbaiki data tersebut, atau datang ke kantor perizinan untuk dibantu.",
+    "category": "Izin Lainnya"
+  },
+  {
+    "id": "29",
+    "question": "Apakah ada kewajiban pelaporan setelah punya NIB?",
+    "answer": "Sebagian pelaku usaha wajib menyampaikan laporan kegiatan usaha secara berkala lewat OSS (LKPM), tergantung skala usaha. Tanyakan ke kantor apakah usaha Anda termasuk yang wajib.",
+    "category": "Izin Lainnya"
+  },
+  {
+    "id": "30",
+    "question": "Apa bedanya OSS dan SIMBG?",
+    "answer": "OSS dipakai untuk perizinan berusaha seperti NIB. SIMBG dipakai untuk persetujuan bangunan seperti PBG dan SLF. Keduanya saling terhubung, jadi data dari satu sistem bisa dipakai di sistem lainnya.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "31",
+    "question": "Apakah ada website resmi kantor perizinan?",
+    "answer": "Website resmi dinas perizinan Kota Baubau tercatat di dpmptsp.baubaukota.go.id. Untuk NIB gunakan oss.go.id, dan untuk PBG gunakan simbg.pu.go.id.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "32",
+    "question": "Apakah pengurusan izin bisa dilakukan online?",
+    "answer": "NIB diurus online lewat OSS dan PBG lewat SIMBG. Untuk jenis izin lain, tanyakan ke kantor apakah bisa online atau harus datang langsung.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "33",
+    "question": "Bagaimana cara mengecek status permohonan?",
+    "answer": "Login ke akun OSS (untuk NIB dan izin berusaha) atau akun SIMBG (untuk PBG dan SLF) untuk melihat status dan pemberitahuan. Jika status tidak jelas, tanyakan ke kantor perizinan.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "34",
+    "question": "Bisakah permohonan diwakilkan?",
+    "answer": "Pada umumnya bisa dengan surat kuasa dan kelengkapan identitas. Konfirmasikan syarat pastinya ke kantor perizinan sebelum mewakilkan.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "35",
+    "question": "Apakah harus lewat calo atau biro jasa?",
+    "answer": "Tidak harus. Anda bisa mengurus sendiri lewat OSS, SIMBG, atau datang ke kantor. Jangan menyerahkan data pribadi atau kata sandi akun kepada pihak yang tidak dikenal.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "36",
+    "question": "Apa yang bisa dijawab chatbot ini?",
+    "answer": "Chatbot ini memberi informasi umum tentang layanan perizinan, seperti syarat NIB dan PBG, alur pengurusan, dan lokasi kantor. Keputusan dan ketentuan resmi tetap dari kantor perizinan.",
+    "category": "Informasi Umum"
+  },
+  {
+    "id": "37",
+    "question": "Bagaimana menyampaikan keluhan atau pengaduan?",
+    "answer": "Sampaikan langsung ke kantor perizinan. Chatbot ini hanya memberi informasi umum dan tidak menerima pengaduan resmi.",
+    "category": "Informasi Umum"
+  }
+]
