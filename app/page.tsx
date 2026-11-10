@@ -44,7 +44,9 @@ const TIPS = [
 ];
 // ==========================
 
-const WELCOME = {
+type Msg = { role: 'bot' | 'user'; text: string; t: number | null };
+
+const WELCOME: Msg = {
   role: 'bot',
   t: null,
   text: 'Halo! Saya asisten virtual layanan perizinan Kota Baubau. Silakan tanyakan seputar NIB, PBG, daftar izin, atau lokasi kantor.',
@@ -53,7 +55,7 @@ const WELCOME = {
 // ---------- tampilan teks balasan (tebal, daftar, tautan) ----------
 const INLINE_RE = /(\*\*[^*]+\*\*|https?:\/\/[^\s)]*[^\s).,;:!?]|\b(?:oss\.go\.id|simbg\.pu\.go\.id|dpmptsp\.baubaukota\.go\.id)\b)/g;
 
-function inline(text, k) {
+function inline(text: string, k: string | number) {
   return text.split(INLINE_RE).map((p, i) => {
     if (!p) return null;
     if (/^\*\*[^*]+\*\*$/.test(p)) return <strong key={`${k}-${i}`}>{p.slice(2, -2)}</strong>;
@@ -64,41 +66,50 @@ function inline(text, k) {
   });
 }
 
-function Rich({ text }) {
-  const blocks = [];
-  let list = null;
-  String(text).split('\n').forEach((raw) => {
+type ListBlock = { type: 'ul' | 'ol'; items: string[] };
+type Block = ListBlock | { type: 'p'; text: string };
+
+function Rich({ text }: { text: string }) {
+  const blocks: Block[] = [];
+  let list: ListBlock | null = null;
+  for (const raw of String(text).split('\n')) {
     const line = raw.trimEnd();
     const bullet = line.match(/^\s*[-*•]\s+(.*)/);
     const num = line.match(/^\s*\d+[.)]\s+(.*)/);
-    if (bullet || num) {
-      const type = bullet ? 'ul' : 'ol';
+    const m = bullet || num;
+    if (m) {
+      const type: 'ul' | 'ol' = bullet ? 'ul' : 'ol';
       if (!list || list.type !== type) {
         list = { type, items: [] };
         blocks.push(list);
       }
-      list.items.push((bullet || num)[1]);
+      list.items.push(m[1]);
     } else if (line.trim() === '') {
       list = null;
     } else {
       list = null;
       blocks.push({ type: 'p', text: line });
     }
-  });
-  return blocks.map((b, i) => {
-    if (b.type === 'p') return <p key={i}>{inline(b.text, i)}</p>;
-    const Tag = b.type;
-    return (
-      <Tag key={i}>
-        {b.items.map((t, j) => (
-          <li key={j}>{inline(t, `${i}-${j}`)}</li>
-        ))}
-      </Tag>
-    );
-  });
+  }
+  return (
+    <>
+      {blocks.map((b, i) => {
+        if (b.type === 'p') return <p key={i}>{inline(b.text, i)}</p>;
+        const Tag = b.type;
+        return (
+          <Tag key={i}>
+            {b.items.map((t, j) => (
+              <li key={j}>{inline(t, `${i}-${j}`)}</li>
+            ))}
+          </Tag>
+        );
+      })}
+    </>
+  );
 }
 
-const fmtTime = (t) => (t ? new Date(t).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }) : '');
+const fmtTime = (t: number | null) =>
+  t ? new Date(t).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }) : '';
 
 const CSS = `
 .cx-wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;grid-template-rows:minmax(0,1fr);gap:16px;height:calc(100dvh - 150px)}
@@ -171,19 +182,20 @@ const CSS = `
 `;
 
 export default function ChatPage() {
-  const [log, setLog] = useState([WELCOME]);
+  const [log, setLog] = useState<Msg[]>([WELCOME]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(-1);
-  const logRef = useRef(null);
-  const inputRef = useRef(null);
-  const wrapRef = useRef(null);
+  const logRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const wrapRef = useRef<HTMLDivElement>(null);
 
   // Tinggi area chat = sisa layar di bawah header, sehingga halaman tidak perlu di-scroll.
   // Jika layar terlalu pendek (di bawah MIN), scroll halaman dibiarkan aktif.
   useEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
+    const node = wrapRef.current;
+    if (!node) return;
+    const el: HTMLDivElement = node;
     const MIN = 360;
     const html = document.documentElement;
     const body = document.body;
@@ -219,7 +231,7 @@ export default function ChatPage() {
     if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
   }, [log, busy]);
 
-  async function ask(text) {
+  async function ask(text: string) {
     const q = text.trim();
     if (!q || busy) return;
     setLog((l) => [...l, { role: 'user', text: q, t: Date.now() }]);
@@ -241,7 +253,7 @@ export default function ChatPage() {
     }
   }
 
-  async function copyText(i, text) {
+  async function copyText(i: number, text: string) {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(i);
